@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context
+        https://www.springframework.org/schema/context/spring-context.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop.xsd
+        http://www.springframework.org/schema/tx
+        https://www.springframework.org/schema/tx/spring-tx.xsd">
+
+<!--    1.扫描Service下的包-->
+    <context:component-scan base-package="com.kuang.service"/>
+
+<!--    2.将所有业务类注入spring，可以通过配置或注解实现-->
+    <bean id="bookServiceImpl" class="com.kuang.service.BookServiceImpl">
+<!--        因为之前已经扫描了dao包，所以BookMapper自动映射为bookMapper-->
+        <property name="bookMapper" ref="bookMapper"/>
+    </bean>
+
+<!--    3.声明事务配置-->
+    <bean id="transactionManager" class="org.springframework.jdbc.datasource.DataSourceTransactionManager">
+<!--        注入数据源-->
+        <property name="dataSource" ref="dataSource"/>
+    </bean>
+
+
+
+<!--    4.AOP事务支持-->
+<!--    <tx:advice id="txAdvice" transaction-manager="transactionManager">-->
+<!--        <tx:attributes>-->
+<!--            <tx:method name="*" propagation="REQUIRED"/>-->
+<!--        </tx:attributes>-->
+<!--    </tx:advice>-->
+<!--    <aop:config>-->
+<!--        <aop:pointcut id="txPointCut" expression="execution(* com.kuang.dao.*.*(..))"/>-->
+<!--        <aop:advisor advice-ref="txAdvice" pointcut-ref="txPointCut"/>-->
+<!--    </aop:config>-->
+
+<!--    自动装配AOP，配合loggingAspect类使用-->
+<!--    <aop:aspectj-autoproxy/>-->
+
+
+</beans>

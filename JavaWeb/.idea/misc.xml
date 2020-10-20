@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/javaweb-01-maven" />
+    <file type="web" url="file://$PROJECT_DIR$/javaweb-02-servlet02" />
+    <file type="web" url="file://$PROJECT_DIR$/javaweb-03-response" />
+    <file type="web" url="file://$PROJECT_DIR$/javaweb-04-request" />
+    <file type="web" url="file://$PROJECT_DIR$/javaweb-05-sessioncookie" />
+    <file type="web" url="file://$PROJECT_DIR$/javaweb-08-file" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/javaweb-09-mail/pom.xml" />
+      </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/file/pom.xml" />
+        <option value="$PROJECT_DIR$/javaweb-07-filter/pom.xml" />
+      </set>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_14" project-jdk-name="14" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+</project>

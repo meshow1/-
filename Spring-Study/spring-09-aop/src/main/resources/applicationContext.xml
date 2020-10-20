@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+    <!--    注册bean-->
+    <bean id="userService" class="com.kuang.service.UserServiceImpl"/>
+    <bean id="log" class="com.kuang.log.Log"/>
+    <bean id="afterlog" class="com.kuang.log.AfterLog"/>
+
+<!--    方式1-->
+<!--    使用原生spring api接口-->
+    <!--    导入AOP约束-->
+<!--    <aop:config>-->
+<!--        &lt;!&ndash;切入点, 给所有UserServiceImpl下的方法添加切入&ndash;&gt;-->
+<!--        <aop:pointcut id="pointcut" expression="execution(* com.kuang.service.UserServiceImpl.*(..))"/>-->
+<!--        &lt;!&ndash;添加切入&ndash;&gt;-->
+<!--        <aop:advisor advice-ref="log" pointcut-ref="pointcut"/>-->
+<!--        <aop:advisor advice-ref="afterlog" pointcut-ref="pointcut"/>-->
+<!--    </aop:config>-->
+    <!-- 切入点-->
+
+
+
+    <!--方式2-->
+<!--    定义切面-->
+    <bean id="diy" class="com.kuang.diy.DiyPointCut"/>
+
+    <aop:config>
+        <!--省略了注册方法的bean（log和afterlog）,可以直接传入diy中的方法-->
+        <aop:aspect ref="diy">
+            <aop:pointcut id="point" expression="execution(* com.kuang.service.UserServiceImpl.*(..))"/>
+            <aop:before method="before" pointcut-ref="point"/>
+            <aop:after method="after" pointcut-ref="point"/>
+        </aop:aspect>
+    </aop:config>
+
+    <!--方式3-->
+    <bean id="annotationPointCut" class="com.kuang.diy.AnnotationPointCut"/>
+    <!--开启注解-->
+    <aop:aspectj-autoproxy/>
+
+
+</beans>

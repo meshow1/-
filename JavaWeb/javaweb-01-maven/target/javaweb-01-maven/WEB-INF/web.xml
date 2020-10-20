@@ -1,0 +1,19 @@
+<!DOCTYPE web-app PUBLIC
+ "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
+ "http://java.sun.com/dtd/web-app_2_3.dtd" >
+
+<web-app>
+
+<!--  注册Servlet-->
+  <servlet>
+    <servlet-name>hiServlet</servlet-name>
+    <servlet-class>com.kuang.servlet.HiServlet</servlet-class>
+  </servlet>
+<!--  每个servlet对应一个mapping-->
+  <servlet-mapping>
+    <servlet-name>hiServlet</servlet-name>
+<!--    请求路径-->
+    <url-pattern>/hiservlet</url-pattern>
+  </servlet-mapping>
+  
+</web-app>

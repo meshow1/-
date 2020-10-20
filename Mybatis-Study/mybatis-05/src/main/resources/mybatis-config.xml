@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+
+<!--    <environments default="development">-->
+<!--        <environment id="development">-->
+<!--            <transactionManager type="JDBC"/>-->
+<!--            <dataSource type="POOLED">-->
+<!--                <property name="driver" value="com.mysql.jdbc.Driver"/>-->
+<!--                <property name="url" value="jdbc:mysql://localhost:3306/mybatis?useSSL=false&amp;useUnicode=true&amp;characterEncoding=UTF-8"/>-->
+<!--                <property name="username" value="root"/>-->
+<!--                <property name="password" value="19970216r"/>-->
+<!--            </dataSource>-->
+<!--        </environment>-->
+<!--    </environments>-->
+
+<!--    insert out-property-->
+<!--    also here or properties to set config-->
+    <properties resource="db.properties">
+        <property name="username" value="root"/>
+        <property name="password" value="19970216r"/>
+    </properties>
+
+    <!--log factory-->
+    <settings>
+        <setting name="logImpl" value="STDOUT_LOGGING"/>
+    </settings>
+    
+        <environments default="development">
+            <environment id="development">
+                <transactionManager type="JDBC"/>
+                <dataSource type="POOLED">
+                    <property name="driver" value="${driver}"/>
+                    <property name="url" value="${url}"/>
+                    <property name="username" value="${username}"/>
+                    <property name="password" value="${password}"/>
+                </dataSource>
+            </environment>
+        </environments>
+
+<!--    mappers need be registered in mybatisconfig-->
+<!--    <mappers>-->
+<!--        <mapper resource="com/kuang/dao/UserMapper.xml"/>-->
+<!--    </mappers>-->
+
+    <!--if use annotation, must band interface-->
+    <mappers>
+        <mapper class="com.kuang.dao.UserMapper"/>
+    </mappers>
+
+</configuration>

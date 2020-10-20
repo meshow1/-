@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/aop
+        https://www.springframework.org/schema/aop/spring-aop.xsd">
+
+<!--    此文件可专门用于操作数据库-->
+    <import resource="spring-dao.xml"/>
+
+    <bean id="userMapper" class="com.kuang.dao.UserMapperImpl">
+<!--        调用在spring-dao中的SQLSession 的bean并注入-->
+        <property name="sqlSession" ref="sqlSession"/>
+    </bean>
+
+<!--    简化了一步注入SqlSession步骤-->
+    <bean id="userMapper2" class="com.kuang.dao.UserMapperImpl2">
+        <property name="sqlSessionFactory" ref="sqlSessionFactory"/>
+    </bean>
+
+
+</beans>

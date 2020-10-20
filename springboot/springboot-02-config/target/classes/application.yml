@@ -1,0 +1,28 @@
+##可以存储对象,properties只能保存键值对
+#student:
+#  name: qingjiang
+#  age: 3
+#
+#teacher: {name: qingjiang,age: 3}
+#
+##数组
+#pets:
+#  - cat
+#  - dog
+#  - pig
+#pet: [cat,dog,pig]
+server:
+  port: 8081
+
+#可以在配置文件中配置bean的值（Person和Dog）
+person:
+  name: 将
+  age: 3
+  maps: {k1: v1,k2: v2}
+  list:
+    - code
+    - music
+    - girl
+  dog:
+    name: wangcai
+    age: 3

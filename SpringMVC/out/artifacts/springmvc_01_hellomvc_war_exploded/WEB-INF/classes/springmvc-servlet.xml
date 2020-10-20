@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--处理器映射器,将url请求映射成相应的handler -->
+    <bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
+    <!-- 处理器适配器，根据Handler去处理响应请求并返回一个M&V对象-->
+    <bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/>
+    <!--视图解析器，通过M&V对象去渲染界面 -->
+    <bean class="org.springframework.web.servlet.view.InternalResourceViewResolver" id="internalResourceViewResolver">
+        <property name="prefix" value="/WEB-INF/jsp/"/>
+        <property name="suffix" value=".jsp"/>
+    </bean>
+
+<!--    因为使用的是BeanNameUrlHandlerMapping， 所以需要配置处理器名字,以后使用其他映射器-->
+    <bean id="/hello" class="com.kuang.controller.HelloController"/>
+
+
+
+</beans>

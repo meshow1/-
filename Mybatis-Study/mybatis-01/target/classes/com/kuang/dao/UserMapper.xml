@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--change sql sentence into java method,see as a implement of this interface-->
+<mapper namespace="com.kuang.dao.UserMapper">
+    <select id="getUserList" resultType="com.kuang.pojo.User">
+        select * from user
+    </select>
+    
+    <select id="getUserById" resultType="com.kuang.pojo.User" parameterType="int">
+        select * from user where id = #{id}
+    </select>
+
+    <insert id="addUser2" parameterType="map">
+        insert into user (id,name,pwd) values (#{userid}, #{name},#{password})
+    </insert>
+</mapper>
+
+<!--no chinese!!!!!!!!,EVEN HERE -->

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+        https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="address" class="com.kuang.pojo.Address"/>
+
+    <bean id="student" class="com.kuang.pojo.Student">
+        <property name="name" value="qingjiang"/>
+        <property name="address" ref="address"/>
+        <property name="books">
+            <array>
+                <value>honglongmeng</value>
+                <value>shuihuzhuan</value>
+                <value>sanguo</value>
+            </array>
+        </property>
+        <property name="hobbys">
+            <list>
+                <value>sing</value>
+                <value>qiao</value>
+            </list>
+        </property>
+        <property name="card">
+            <map>
+                <entry key="shenfenzheng" value="230202"/>
+                <entry key="yinghangka" value="11111"/>
+                <entry key="yinhang" value="222222"/>
+            </map>
+        </property>
+
+        <property name="games">
+            <set>
+                <value>lol</value>
+            </set>
+        </property>
+
+        <property name="wife">
+            <null/>
+        </property>
+
+        <property name="info">
+            <props>
+                <prop key="xuehao">2019141004</prop>
+                <prop key="xingbie">male</prop>
+                <prop key="xingming">bo</prop>
+            </props>
+        </property>
+    </bean>
+
+</beans>
