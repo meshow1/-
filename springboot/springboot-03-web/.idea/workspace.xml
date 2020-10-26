@@ -30,13 +30,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="1dd67f46-2493-4e08-a54a-330c4b58c9ca" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kuang/config/MyMVCConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kuang/config/MyMVCConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/kuang/controller/IndexController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/kuang/controller/IndexController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/test.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/kuang/config/MyMVCConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/kuang/config/MyMVCConfig.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,17 +94,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Springboot03WebApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="springboot-03-web" />
       <extension name="coverage">
@@ -142,6 +127,7 @@
       <workItem from="1603289010447" duration="168000" />
       <workItem from="1603291158300" duration="133000" />
       <workItem from="1603341252148" duration="12220000" />
+      <workItem from="1603355257411" duration="317000" />
     </task>
     <servers />
   </component>
@@ -192,10 +178,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1920.1040/-1920.70.1920.1040@0.0.1920.1040" timestamp="1603350567425" />
-    <state x="722" y="293" key="FileChooserDialogImpl" timestamp="1603291287874">
+    <state x="722" y="293" key="FileChooserDialogImpl" timestamp="1603355493933">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="722" y="293" key="FileChooserDialogImpl/0.0.1920.1040/-1920.70.1920.1040@0.0.1920.1040" timestamp="1603291287874" />
+    <state x="722" y="293" key="FileChooserDialogImpl/0.0.1920.1040/-1920.70.1920.1040@0.0.1920.1040" timestamp="1603355493933" />
     <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1603353870052">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -256,6 +242,10 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state width="600" height="428" key="javadoc.popup/0.0.1920.1040/-1920.70.1920.1040@0.0.1920.1040" timestamp="1603272751586" />
+    <state x="334" y="180" key="new project wizard" timestamp="1603355573113">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="334" y="180" key="new project wizard/0.0.1920.1040/-1920.70.1920.1040@0.0.1920.1040" timestamp="1603355573113" />
     <state x="625" y="157" width="672" height="678" key="search.everywhere.popup" timestamp="1603345928800">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
