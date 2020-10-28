@@ -23,15 +23,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b220e560-7966-4b6a-9017-265a3dfcb4f3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../springboot-03-web/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-03-web/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-03-web/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-03-web/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-03-web/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-03-web/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-04-data/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-04-data/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-04-data/target/classes/com/kuang/config/DruidConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-04-data/target/classes/com/kuang/config/DruidConfig.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-05-mybatis/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-05-mybatis/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-05-mybatis/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-05-mybatis/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../springboot-05-mybatis/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../springboot-05-mybatis/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,64 +72,6 @@
     <property name="settings.editor.selected.configurable" value="preferences.general" />
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="springboot-05-security" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="springboot-05-security" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="filePath" />
-      <option name="vmParameters" />
-      <option name="alternativeJrePath" />
-      <option name="programParameters" />
-      <option name="passParentEnvs" value="true" />
-      <option name="workingDirectory" />
-      <option name="isAlternativeJrePathEnabled" value="false" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="WORKING_DIRECTORY" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Springboot05SecurityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="springboot-05-security" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.kuang.Springboot05SecurityApplication" />
@@ -159,6 +92,7 @@
       <workItem from="1603619218152" duration="3720000" />
       <workItem from="1603686837269" duration="21000" />
       <workItem from="1603712846224" duration="140000" />
+      <workItem from="1603775477663" duration="597000" />
     </task>
     <servers />
   </component>
@@ -226,5 +160,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="461" y="164" key="SettingsEditor/0.0.1920.1040/-1920.70.1920.1040@0.0.1920.1040" timestamp="1603712972037" />
+    <state x="334" y="180" key="new project wizard" timestamp="1603776070845">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="334" y="180" key="new project wizard/0.0.1920.1040/-1920.70.1920.1040@0.0.1920.1040" timestamp="1603776070845" />
   </component>
 </project>
